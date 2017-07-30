@@ -1,0 +1,52 @@
+.Upload {
+  align-items: center;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  left: 0;
+  opacity: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  transform: translateX(-100%);
+  transition: opacity .4s ease, transform 0s ease .4s;
+}
+
+.Upload:before {
+  background: #000;
+  bottom: 0;
+  content: '';
+  left: 0;
+  position: absolute;
+  right: 0;
+  opacity: 0.3;
+  top: 0;
+}
+
+.Upload-open {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity .4s ease, transform 0s ease 0s;
+}
+
+.Upload-panel {
+  background: #fff;
+  box-sizing: border-box;
+  color: #000;
+  height: 80%;
+  padding: 20px;
+  position: relative;
+  width: 90%;
+  z-index: 1;
+}
+
+.Upload-close {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  font-size: 20px;
+  right: 10px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}

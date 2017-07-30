@@ -15,3 +15,24 @@
 .App-intro {
   font-size: large;
 }
+
+.App-loading {
+  position: relative;
+}
+
+.App-loading:after {
+  animation: spin 2s linear infinite;
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid #ed1b2e;
+  border-radius: 50%;
+  content: '';
+  display: inline-block;
+  height: 60px;
+  margin: 20px 0;
+  width: 60px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

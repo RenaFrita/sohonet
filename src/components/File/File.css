@@ -1,0 +1,34 @@
+.File {
+  text-align: left;
+}
+
+.File-name {
+  color: #ed1b2e;
+}
+
+.File-details {
+  color: #222;
+}
+
+.File-details dt,
+.File-details dd {
+  border: 1px solid #494949;
+  display: inline-block;
+  margin: 0;
+  padding: 10px;
+}
+
+.File-details dt {
+  border-right-width: 0;
+  padding-right: 0;
+}
+
+.File-details dd {
+  border-left-width: 0;
+  border-right-width: 0;
+  padding-left: 0;
+}
+
+.File-details dd:last-child {
+  border-right: 1px solid #494949;
+}
